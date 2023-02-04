@@ -1,0 +1,190 @@
+*{
+    background-color: #e7e7e7b5;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+header{
+    display: flex;
+    position: static;
+    margin-top: 0px;
+    top: 0px;
+    background-color: #c7c9c7;
+    color: #17252a;
+    width: fill;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.box{
+    background-color: aqua;
+}
+
+.logo a{
+    align-items: center;
+    display: flex;
+    height: 80px;
+    width: 120x;
+}
+.logo img{
+    width: auto;
+    max-height: 100%;
+    display: block;
+    
+}
+
+header li{
+    display: inline;
+    color: black;
+    text-decoration: none;
+}
+header li a{
+    background-color: #c7c9c7;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    white-space: pre;
+}
+a:hover{
+    color: #e7e7e7b5;
+}
+header ul{
+    background-color: #c7c9c7;
+   
+}
+
+
+.chi{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
+}
+.testo{
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    float: left;
+}
+.testo h3{
+    font-size: 36px;
+}
+.testo p{
+    font-size: 26px;
+}
+.immagine{
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    float: right;
+}
+.immagine img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.projects h3{
+    font-size: 36px;
+}
+.projects{
+    text-align: center;
+    height: 200px;
+    text-decoration: none;
+}
+
+summary{
+    font-size: 30px;
+}
+summary:hover{
+    color: darkred;
+}
+
+details img{
+    border: solid 1px darkred;
+    height: 400px;
+    width: 90%;
+}
+
+.contacts{
+    display: flex;
+    height: 300px;
+    width: 95%;
+    background-image: url("foto grande2.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.telefono{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+.telefono img{
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+}
+.telefono h4{
+    font-size: 26px;
+}
+
+.mail{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    color: #17252a;
+    background-color: #c7c9c7;
+
+}
+
+.mail img{
+    height: 90px;
+    width: 90px;
+    margin-top: 5px;
+    
+}
+.tt{
+    display: none;
+    font-size: 26px;
+    background-color: #c7c9c7;
+}
+.ii:hover{
+    display: none;
+    height: 100px;
+    width: 250px;
+    color: #c7c9c7;
+    background-color: #17252a;
+}
+.mail:hover + .ii{
+    display: none;
+    height: 0px;
+    width: 0px;
+}
+.mail:hover + .tt{
+    display: block;
+
+}
+
+@media only screen and (max-width: 660px){
+    .logo{
+        display: none;
+    }
+    details img{
+        height: 300px;
+        width: 90%;
+    }
+
+
+}

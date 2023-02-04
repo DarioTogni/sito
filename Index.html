@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Users/dario/Desktop/projects/Sito Dario/Style.css">
+    <script>
+        var image_tracker = 'foto1';
+        function change(){
+            var image = document.getElementById('foto');
+            if(image_tracker=='foto1'){
+                image.src = "foto2.jpeg";
+                image_tracker = 'foto2';
+            } else{
+                image.src = "foto1.jpeg";
+                image_tracker = 'foto1';
+            }
+        }
+    
+    </script>
+</head>
+<body>
+    <header>
+            <div class="logo">
+                <a href="/Users/dario/Desktop/projects/Sito Dario/Index.html"><img src="LogoGrigio.png"></a>
+            </div>
+            <ul>
+                    <li><a href="/Users/dario/Desktop/projects/Sito Dario/Index.html"> About Me </a></li>
+                    <li><a href="#projects"> Projects </a></li>
+                    <li><a href="/Users/dario/Desktop/projects/Sito Dario/contacts.html"> Contacts </a></li>
+            </ul>
+      
+    </header>
+
+    <div class="chi" id="chi">
+        <div class="testo">
+            <h3>About Me</h3>
+            <p>qua vanno scritte tante cose da riempire spazio. poi vedremo ma al momento lasciamolo cosi che tanto va bene evviva evviva evviva</p>
+        </div>
+        <div class="immagine">
+            <img src="foto1.jpeg" alt="This is Dario" id="foto" onclick="change();">
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <h3>Check out my portfolio Projects:</h3>
+            <details>
+                <summary>Tea Cozy</summary>
+                <img src="teacozy.png">
+            </details>
+            <details>
+                <summary>Reel Estate</summary>
+                <img src="ReelEstate.png">
+            </details>
+            <details>
+                <summary>Sito Dario</summary>
+                <img src="SitoDario.png">
+            </details>
+        
+    </div>
+
+
+    
+</body>
+</html>
